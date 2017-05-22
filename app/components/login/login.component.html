@@ -1,0 +1,45 @@
+
+
+<ul class="wrapper">
+    <!--LEFT SECTION START HERE-->
+    <li class="left-section">
+        <div class="logo"><img src="app/assets/images/logo.svg" alt="logo.svg" class="img-responsive"></div>
+        <div class="powered-by">Powered by
+            <a href="http://vizteck.com" class="vizteck" target="_blank">Vizteck Solutions</a></div>
+    </li>
+    <!--LEFT SECTION END HERE-->
+
+    <!--RIGHT SECTION START HERE-->
+    <li class="right-section">
+        <div class="right-section-wrapper login_width">
+            <h1 class="right-section-title">Login with your account.</h1>
+            <span class="form-row"><input type="text" placeholder="Username" class="form-field"></span>
+            <span class="form-row"><input type="password" placeholder="Password" class="form-field"></span>
+            <span class="form-row"><button type="button" class="form-button primary-btn">Login</button></span>
+            <span class="form-row">Don't have an account? <a href="#" class="create-one">Create One</a></span>
+        </div>
+    </li>
+    <!--RIGHT SECTION END HERE-->
+</ul>
+
+
+
+
+<script type="text/javascript">
+    <!-- BROWSER HEIGHT SCRIPT START HERE -->
+    $(document).ready(function(){
+        browserWindowheight = $(window).height();
+        console.log(browserWindowheight);
+        elementWindowheight = $(".profile_nav_wrapper").height();
+        $(".profile_banner_wrapper").css({height: (browserWindowheight-elementWindowheight)+"px"})
+        //$(".full_height").css({height: browserWindowheight+"px"})
+    });
+
+    window.onresize = function() {
+        browserWindowheight = $(window).height();
+        elementWindowheight = $(".profile_nav_wrapper").height();
+        $(".profile_banner_wrapper").css({height: (browserWindowheight-elementWindowheight)+"px"})
+    };
+
+    <!-- BROWSER HEIGHT SCRIPT END HERE -->
+</script>

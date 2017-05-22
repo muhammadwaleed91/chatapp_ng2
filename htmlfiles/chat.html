@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>1O1 Chat</title>
+
+    
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+
+   
+</head>
+
+  <body>
+
+    <ul class="wrapper">
+    	
+        
+        <!--RIGHT SECTION START HERE-->
+        <li class="chat-section">
+        	<div class="right-section-wrapper users_wrapper" id="users-wrapper-height">
+            
+            	<!--CHAT HEADER START HERE-->
+            	<div class="header padding-style1 display-flex">
+                	<!--<span class="header-logo">
+                    	<img src="images/logo.svg" alt="logo.svg" class="img-responsive">
+                    </span>-->
+                	<span class="user-wrapper">
+                    	<span class="status online"></span>
+                        <span class="user-id">Asif.bhai.malik@vizteck.com</span>
+                    </span>
+                    <span class="logout-wrapper"><a href="#" class="logout">Logout</a></span>
+                </div>
+                <!--CHAT HEADER END HERE-->
+                
+                <!--CHAT START HERE-->
+                <div class="display-flex display-mobile-flex" id="table">
+                	<span class="chat-left" id="users">
+                    	<div class="no-of-users">15 Users</div>
+                        
+                    	<ul class="users-list" id="users-list-id">
+                        	<li class="users">
+                            	<span class="status offline"></span>
+                                <span class="user-id">Abdul-Rehman@gmail.com</span>
+                            </li>
+                            <li class="users">
+                            	<span class="status online"></span>
+                                <span class="user-id">Abid.Hussain@gmail.com</span>
+                            </li>
+                            
+                             <li class="users">
+                            	<span class="status online"></span>
+                                <span class="user-id">Adnan-Mukhtar@gmail.com</span>
+                            </li>
+                            
+                             <li class="users">
+                            	<span class="status offline"></span>
+                                <span class="user-id">Ahmed-Hassan@gmail.com</span>
+                            </li>
+                            
+                             <li class="users">
+                            	<span class="status offline"></span>
+                                <span class="user-id">Barkan.Saeed@vizteck.com</span>
+                            </li>
+                            
+                             <li class="users">
+                            	<span class="status online"></span>
+                                <span class="user-id">Ammar.Shahid@vizteck.com</span>
+                             </li>
+                            
+                            <li class="users">
+                            	<span class="status online"></span>
+                                <span class="user-id">Farhan.Sabir@vizteck.com</span>
+                            </li>
+                            
+                            <li class="users active">
+                            	
+                            	<span class="status online"></span>
+                                <span class="user-id">Ahmad.Saeed@vizteck.com</span>
+                            </li>
+                            
+                        </ul>
+                        
+                    </span>
+                    <span id="msgs" class="chat-right">
+        				<div class="message-with padding-style1">
+                        	<a href="#" class="back-icon"></a>
+                        	<span class="status online"></span>
+                            <span class="user-id">Ahmad.Saeed@vizteck.com</span>
+                        </div>
+                        
+                    	<div class="messages-wrapper padding-style1">
+                        
+                        	<div class="date-wrapper">
+                        		<div class="date">
+                                	<span class="date-day">26 April</span>
+                                </div>
+                            </div>
+                            
+                            <div class="messages">
+                            	<span class="person-name">Ahmad Saeed <b>12:15pm</b></span>
+                                <span class="who-message-me-bg message-text">
+                                	It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                </span>
+                            </div>
+                            
+                            
+                            <div class="messages">
+                            	<span class="person-name">Me <b>12:35pm</b></span>
+                                <span class="messages-by-me-bg message-text">
+                                	The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                                </span>
+                            </div>
+                            
+                            
+                            
+                            
+                            
+                        </div>
+                        
+                        <div class="padding-style1 type-messages-wrapper">
+                            <textarea class="type-messages" placeholder="Type your message here"></textarea>
+                            <button type="button" class="btn-send-message">
+                            	<img src="images/send-message.svg" alt="send-message.svg" class="img-responsive">
+                            </button>
+                        </div>
+                    </span>
+                </div>
+                <!--CHAT END HERE-->
+                
+                
+            </div>
+        </li>
+        <!--RIGHT SECTION END HERE-->
+    </ul>
+    
+	
+    
+    <script src="js/jquery.js"></script>
+    <script>
+		function resizeChatSection() {
+			var windowHeight = $(window).height();
+			
+			// setting user list div height
+			$('#users-wrapper-height').height(windowHeight);			
+			function resizeTableSection() {
+				var tableHeight = windowHeight - 55;
+				$("#table").height(tableHeight);
+			}
+			function resizeUserList() {
+				var userListHeight = windowHeight - 92;
+				$("#users-list-id").height(userListHeight);
+			}
+			
+			resizeTableSection();
+			resizeUserList();
+		}
+		
+		
+		resizeChatSection();
+		$(window).resize(function(){
+			resizeChatSection();
+		});
+    </script>
+    
+    
+  
+
+</body>
+
+</html>
