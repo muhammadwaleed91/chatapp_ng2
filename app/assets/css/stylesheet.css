@@ -88,6 +88,7 @@ ul.wrapper{
 	
 .chat-section{
     width:100%;
+	height: 100%;
 	}
 	
 .img-responsive{
@@ -200,6 +201,7 @@ span.form-row button.form-button{
 	}
 	
 .users_wrapper{
+	height: 100%;
 	background:rgba(0,0,0,0.05);
 	font-size:16px;
 	}
@@ -269,6 +271,7 @@ span.form-row button.form-button{
 	border:solid 2px rgba(0, 0, 0, 0.05);
 	border-top:none;
 	width:300px;
+	height: 90vh;
 	}
 	
 .chat-right{

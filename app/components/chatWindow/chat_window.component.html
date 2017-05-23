@@ -1,0 +1,54 @@
+<ul class="wrapper">
+
+
+    <!--RIGHT SECTION START HERE-->
+    <li class="chat-section">
+        <div class="right-section-wrapper users_wrapper" id="users-wrapper-height">
+
+            <!--CHAT HEADER START HERE-->
+            <chat-header></chat-header>
+            <!--CHAT HEADER END HERE-->
+
+            <!--CHAT START HERE-->
+            <div class="display-flex display-mobile-flex" id="table">
+                <!--chat list component -->
+                <chat-list></chat-list>
+
+                <!--thread component -->
+                <thread></thread>
+
+            </div>
+            <!--CHAT END HERE-->
+
+
+        </div>
+    </li>
+    <!--RIGHT SECTION END HERE-->
+</ul>
+
+<!--<script>
+    function resizeChatSection() {
+        var windowHeight = $(window).height();
+
+        // setting user list div height
+        $('#users-wrapper-height').height(windowHeight);
+        function resizeTableSection() {
+            var tableHeight = windowHeight - 55;
+            $("#table").height(tableHeight);
+        }
+        function resizeUserList() {
+            var userListHeight = windowHeight - 92;
+            $("#users-list-id").height(userListHeight);
+        }
+
+        resizeTableSection();
+        resizeUserList();
+    }
+
+
+    resizeChatSection();
+    $(window).resize(function(){
+        resizeChatSection();
+    });
+</script>-->
+    
